@@ -1,5 +1,6 @@
 ﻿using CustomerManager.Code.Models;
 using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace CustomerManager.Code.DataAccess
@@ -25,8 +26,17 @@ namespace CustomerManager.Code.DataAccess
 
         public IQueryable<Guest> GetGuests(string rsvpDate)
         {
-            return _context.Guests
-                .Where(c => c.RSVPDate == rsvpDate).OrderByDescending(c => c.TimeOfRSVP);
+            try
+            { 
+                return _context.Guests
+                    .Where(c => c.RSVPDate == rsvpDate).OrderByDescending(c => c.TimeOfRSVP);
+            }
+            catch(Exception ex)
+            {
+                Trace.WriteLine(ex.Message);
+
+                throw;
+            }
         }
 
         public Guest GetGuest(int guestId)
@@ -36,10 +46,19 @@ namespace CustomerManager.Code.DataAccess
 
         public void AddGuest(Guest guest, string RSVPDate)
         {
-            guest.RSVPDate = RSVPDate;
-            guest.TimeOfRSVP = DateTime.UtcNow;
-            _context.Guests.Add(guest);
-            _context.SaveChanges();
+            try
+            {
+                guest.RSVPDate = RSVPDate;
+                guest.TimeOfRSVP = DateTime.UtcNow;
+                _context.Guests.Add(guest);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                Trace.WriteLine(ex.Message);
+
+                throw;
+            }
         }
 
         public void DeleteGuest(Guest guest)

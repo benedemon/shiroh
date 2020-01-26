@@ -1,0 +1,258 @@
+body{
+	font-family: Arial;
+	overflow-x: hidden; 
+	padding: 0;
+	margin: 0;
+}
+
+.flex{
+	display: flex;
+}
+.center{
+	align-items: center;
+	justify-content: center;
+}
+.vcenter{
+	align-items: center;
+}
+.hcenter{
+	justify-content: center;
+}
+.cursive{
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 2000px) {
+	.header{
+		width: 100%;
+		height: 100px;
+		background: #e6f2ef;
+		border-bottom: 3px inset #e6f2ef;
+		color: #6e9990;
+	    position: sticky;
+	    top: 0;
+	    left: 0;
+	}
+	.p20{
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.mobile-hide{
+		display: none;
+	}
+	.mobile-col{
+		flex-direction: column;
+	}
+	.header{
+		background: #e6f2ef;
+		border-bottom: 3px inset #e6f2ef;
+		color: #6e9990;
+	    position: sticky;
+	    top: 0;
+	    left: 0;
+	}
+	.p20{
+		padding: 5px;
+	}
+}
+
+.flex-item {
+  flex-grow: 1;
+}
+.even-spaced{
+	justify-content: space-evenly;
+}
+.mlr3{
+	margin: 0 3px 0px 3px;
+}
+.f26{
+	font-size: 26px;
+	font-weight: 400;
+}
+.italics{
+	font-style: italic;
+	font-weight: bold;
+}
+.date{
+	font-size: 26px;
+	border: 2px solid goldenrod;
+	border-radius: 10px;
+	padding: 7px;
+	font-weight: 600;
+}
+.flex-end{
+	justify-content: flex-end;
+}
+
+.banner img{
+	background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.ganesha{
+	width: 100%;
+	height: 250px;
+}
+.ganesha img{
+	width: 150px;
+}
+
+.frame-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.frames{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	background: #e6f2ef;
+	padding: 30px;
+}
+
+.right-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: -90px;
+}
+
+.left-frame{
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -90px;
+}
+
+.left-frame img{
+	height: 170px;
+}
+.right-frame img{
+	height: 170px;
+}
+
+.frame-content{
+	background-color: #6e9990;
+	max-width: 75%;
+	padding: 20px;
+	border-radius: 15px; 
+}
+
+.frame-content img{
+	width: 200px;
+}
+
+.love-story, .wedding-ceremony, .evening-get-together{
+	color: white;
+	margin: 20px 0px;
+    padding: 10px;
+}
+
+.love-story .head, .wedding-ceremony .head, .evening-get-together .head{
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.love-story .body{
+	padding: 10px;
+}
+.wedding-ceremony .body, .evening-get-together .body{
+	padding: 10px;
+	text-align: center;
+}
+.evening-get-together .head{
+	background: goldenrod;
+    border-radius: 9px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.love-story .body .left{
+	text-align: left;
+	margin: 10px 0px;
+}
+.love-story .body .right{
+	text-align: right;
+	margin: 10px 0px;
+}
+.love-story .body .sec .main{
+	font-size: 20px;
+	font-weight: 400;
+}
+.love-story .body .sec .sub{
+	font-size: 15px;
+}
+.margin10{
+	margin: 15px 0px;
+}
+.evening-get-together .body .sub{
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding: 15px;
+}
+.evening-get-together .body .sub .content{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.evening-get-together .body .sub span{
+	font: icon;
+}
+.golden-right-border{
+	border-right: 1px solid goldenrod;
+}
+.white{
+	color: white;
+}
+
+.conclusion{
+	background: #e6f2ef;
+	color: #6e9990;
+    text-align: center;
+    padding: 20px;
+}
+.conclusion .head{
+	font-size: 32px;
+	font-family: 'Snell Roundhand','Brush Script MT',cursive;
+}
+.conclusion img{
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.gift-content{
+	font-style: italic;
+	font-size: 24px;
+	line-height: 1.5;
+	margin-top: 20px;
+}
+.gifts{
+	color: goldenrod;
+}
+.footer{
+	background: #6e9990;
+	height: 100px;
+	display: flex;
+	text-align: center;
+	align-items: center; 
+}
+.footer .text{
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}

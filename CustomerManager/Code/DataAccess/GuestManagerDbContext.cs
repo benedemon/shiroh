@@ -9,6 +9,12 @@ namespace CustomerManager.Code.DataAccess
 {
     public class GuestManagerDbContext : DbContext
     {
+        public GuestManagerDbContext()
+            : base("GuestDBConnection")
+        {
+
+        }
+
         public DbSet<Guest> Guests { get; set; }
     }
 }

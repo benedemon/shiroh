@@ -1,6 +1,5 @@
 namespace CustomerManager.Migrations
 {
-    using CustomerManager.Code.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -15,15 +14,10 @@ namespace CustomerManager.Migrations
 
         protected override void Seed(CustomerManager.Code.DataAccess.GuestManagerDbContext context)
         {
-            context.Set<Guest>().AddOrUpdate(new Guest
-            {
-                ID = 1,
-                FullName = "Raj Singh",
-                PhoneNumber = "9958387299",
-                EmailId = "rajsing@microsoft.com",
-                RSVPDate = "29thFeb",
-                TimeOfRSVP = new DateTime(2020, 1, 16)
-            });
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data.
         }
     }
 }

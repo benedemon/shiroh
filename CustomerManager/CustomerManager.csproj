@@ -237,9 +237,33 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Shikha and Rohan_files\wedding-invite-1.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\wedding-invite-2.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\wedding-invite-mobile-1.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\wedding-invite-mobile-2.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\wedding_invite.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\wedding_invite_mobile.jpg" />
+    <Content Include="Content\shirohstyle.css" />
+    <Content Include="Content\shirohstyle2.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 3.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 11.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 12.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 13.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 14.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 16.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 17.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 18.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 19.png" />
+    <Content Include="Content\Shikha and Rohan_files\Asset 20.png" />
+    <Content Include="Content\Shikha and Rohan_files\ganesha.png" />
+    <Content Include="Content\Shikha and Rohan_files\invite.png" />
+    <Content Include="Content\Shikha and Rohan_files\tempsnip.png" />
+    <Content Include="Content\Shikha and Rohan_files\footer.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\collage.jpg" />
+    <Content Include="Content\Shikha and Rohan_files\invite-mobile.png" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -265,6 +289,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Properties\PublishProfiles\shirohfinal - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\shirohtestapp - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\shirohtestapp - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\shirohtestappdb - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\shirohtestappdb - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -284,18 +313,23 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\shiroh.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
